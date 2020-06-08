@@ -1,4 +1,6 @@
 import React from 'react';
+import Burger from '@animated-burgers/burger-squeeze' 
+import '@animated-burgers/burger-squeeze/dist/styles.css' 
 
 const Navbar = ({ fixed }) => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -27,13 +29,7 @@ const Navbar = ({ fixed }) => {
                 />
               </svg>
             </a>
-            <button
-              className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <i className="text-black fa fa-bars"></i>
-            </button>
+            <Burger className="lg:hidden px-3 py-3 text-gray-900 text-xs bg-blue-500" onClick={() => setNavbarOpen(!navbarOpen)} />
           </div>
           <div
             className={

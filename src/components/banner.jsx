@@ -4,14 +4,14 @@ const Banner = () => {
   return (
     <div className="bg-indigo-900 text-center py-4 lg:px-4">
       <div
-        className="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
+        className="md:mx-0 mx-4 p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex"
         role="alert"
       >
         <span className="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">
           New
         </span>
-        <span className="font-semibold mr-2 text-left flex-auto">
-          Get the coolest t-shirts from our brand new store
+        <span className="font-semibold mr-2 text-center flex-auto">
+          Subscribe to our monthly newsletter
         </span>
         <svg
           className="fill-current opacity-75 h-4 w-4"
